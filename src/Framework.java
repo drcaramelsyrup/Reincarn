@@ -35,7 +35,6 @@ public class Framework extends StateBasedGame{
  
     public Framework(String name) {
         super(name);
-        // TODO Auto-generated constructor stub
     }
     
     public void keyPressed(int key, char c) {
