@@ -2,11 +2,11 @@
 import org.newdawn.slick.SpriteSheet;
 
 public class Player implements Actor {
-	SpriteSheet mySprites;
+	SpriteSheet[] mySprites;
 	String name;
 	Location loc;
 	public Player(){
-
+		
 	}
 	public void setName(String s){
 		name = s;
@@ -14,8 +14,9 @@ public class Player implements Actor {
 	public String getName(){
 		return name;
 	}
+	//public Player dea
 	@Override
-	public SpriteSheet getSprites() {
+	public SpriteSheet[] getSprites() {
 		// TODO Auto-generated method stub
 		return mySprites;
 	}

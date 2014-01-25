@@ -8,11 +8,14 @@ public class Human extends Player{
 		super.setName("Human");
 		super.loc.setX(0);
 		super.loc.setY(0);
-		try {
-			super.mySprites = new SpriteSheet(name + ".png", 34, 34, 0);
-		} 
-		catch(SlickException e){
-			System.out.println("Image failed to load");
+		super.mySprites = new SpriteSheet[3];
+		for(int i=1; i<4; i++){
+			try {
+				super.mySprites[i-1] = new SpriteSheet(name+i + ".png", 34, 34, 0);
+			} 
+			catch(SlickException e){
+				System.out.println("Image failed to load");
+			}
 		}
 	}
 }
