@@ -26,6 +26,12 @@ public class levelOne extends Level{
 	private Image bear2;
 	public Animation bear;
 	public Animation sprite;
+	public Plant plant;
+	public Bear b;
+	public Fish fish;
+	public Fly fly;
+	public Human human;
+	
 	
 	
     @Override
@@ -39,6 +45,11 @@ public class levelOne extends Level{
     	Image[] bearMvmt = {bear1, bear2};
     	bear = new Animation(bearMvmt, 300, false);
     	sprite = bear;
+    	plant = new Plant();
+    	b = new Bear();
+    	fish = new Fish();
+    	fly = new Fly();
+    	human = new Human();
     	
         // TODO Auto-generated method stub
  
@@ -52,7 +63,11 @@ public class levelOne extends Level{
     	grassMap.render((int)x, (int)y);
     	g.drawString("HELLO", 40, 100);
     	sprite.draw(640, 360);
-    	
+    	plant.mySprites[0].draw(100, 200);
+    	b.mySprites[2].draw(300, 400);
+    	fish.mySprites[0].draw(640, 400);
+    	fly.mySprites[0].draw(640, 450);
+    	human.mySprites[0].draw(640, 500);
     	
     	
  
@@ -65,6 +80,11 @@ public class levelOne extends Level{
         // TODO Auto-generated method stub
   
     	sprite.update(delta);
+    	plant.mySprites[0].update(delta);
+    	b.mySprites[2].update(delta);
+    	fish.mySprites[0].update(delta);
+    	fly.mySprites[0].update(delta);
+    	human.mySprites[0].update(delta);
     	
  
     }
@@ -72,7 +92,7 @@ public class levelOne extends Level{
     @Override
     public int getID() {
         // TODO Auto-generated method stub
-        return ID;
+        return this.ID;
     }
     
 

@@ -1,3 +1,5 @@
+package slick.Test;
+
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.SpriteSheet;
 import org.newdawn.slick.Animation;
@@ -9,20 +11,28 @@ public class Plant extends Player{
 	int jumpH;
 	int Speed;
 	public Plant(){
-		jumpH = null;
-		Speed = null;
+		//jumpH = null;
+		//Speed = null;
 		super.setName("Plant");
-		super.loc.setX(0);
-		super.loc.setY(0);
+		super.loc = new Location(0, 0);
+		//super.loc.setX(0);
+		//super.loc.setY(0);
 		super.mySprites = new Animation[1];
 		makeAnimation();
 	}
 	void makeAnimation(){
+		try{
 		Image Plant1 = new Image("Sprites/Plant1.png");
 		Image Plant2 = new Image("Sprites/Plant2.png");
 		Image[] PlantM = {Plant1, Plant2};
 		Animation PlantMove = new Animation(PlantM, 300, false);
-		mySprites.add(PlantMove);
+		mySprites[0] = PlantMove;
+		}
+		catch(SlickException e){
+			System.out.println("Image failed to load");
+		}
+		
+		
 	}
 
 }

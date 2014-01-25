@@ -1,3 +1,4 @@
+package slick.Test;
 
 public class Location{
 	int xCoord;

@@ -1,3 +1,7 @@
+package slick.Test;
+//import Actor;
+
+
 
 import org.newdawn.slick.SpriteSheet;
 import org.newdawn.slick.Animation;
