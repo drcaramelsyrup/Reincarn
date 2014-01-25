@@ -54,7 +54,10 @@ public class Level extends BasicGameState{
     @Override
     public void update(GameContainer container, StateBasedGame game, int delta)
             throws SlickException {
-        // TODO Auto-generated method stub
+    	// player movement
+    	if (!isOnGround()) {
+    		y -= 2.0;
+    	}
     	if(input.isKeyDown(Input.KEY_LEFT)){
     		x -= 2.0;
     	}

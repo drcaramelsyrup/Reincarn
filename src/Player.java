@@ -7,6 +7,7 @@ import org.newdawn.slick.SpriteSheet;
 import org.newdawn.slick.Animation;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
+import org.newdawn.slick.TiledMap;
 
 public class Player implements Actor {
 	Animation[] mySprites;
@@ -37,6 +38,12 @@ public class Player implements Actor {
 	}
 	public boolean isPlant(){
 	        return (this instanceof Plant);
+	}
+	public boolean isOnGround(){
+		String g = "ground";
+		return (g.equals(getTileProperty(getTileId(loc.getX(), 
+				loc.getY(), 1)), "ground", ""));
+		// if the tile the thing is on has the "ground" property
 	}
 	// set player's status
 	public setDeathStatus(boolean death) {

@@ -4,5 +4,5 @@ import org.newdawn.slick.Animation;
 
 public interface Actor {
 	Animation[] getSprites();
-	
+	public boolean isOnGround();
 }

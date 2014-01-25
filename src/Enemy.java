@@ -1,7 +1,7 @@
 import org.newdawn.slick.*;
 
 public class Enemy implements Actor{
-	SpriteSheet mySprites;
+	Animation[] mySprites;
 	String name;
 	Location loc;
 	public Enemy(){
@@ -14,8 +14,14 @@ public class Enemy implements Actor{
 		return name;
 	}
 	@Override
-	public SpriteSheet getSprites() {
+	public Animation[] getSprites() {
 		// TODO Auto-generated method stub
 		return mySprites;
+	}
+	public boolean isOnGround(){
+		String g = "ground";
+		return (g.equals(getTileProperty(getTileId(loc.getX(), 
+				loc.getY(), 1)), "ground", ""));
+		// if the tile the thing is on has the "ground" property
 	}
 }
