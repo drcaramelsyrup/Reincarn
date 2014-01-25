@@ -1,8 +1,11 @@
 
 import org.newdawn.slick.SpriteSheet;
+import org.newdawn.slick.Animation;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
 
 public class Player implements Actor {
-	SpriteSheet[] mySprites;
+	Animation[] mySprites;
 	String name;
 	Location loc;
 	public Player(){
@@ -16,7 +19,7 @@ public class Player implements Actor {
 	}
 	//public Player dea
 	@Override
-	public SpriteSheet[] getSprites() {
+	public Animation[] getSprites() {
 		// TODO Auto-generated method stub
 		return mySprites;
 	}

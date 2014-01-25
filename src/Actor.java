@@ -1,6 +1,7 @@
 import org.newdawn.slick.SpriteSheet;
+import org.newdawn.slick.Animation;
 
 public interface Actor {
-	SpriteSheet[] getSprites();
+	Animation[] getSprites();
 	
 }

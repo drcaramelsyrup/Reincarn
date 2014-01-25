@@ -2,20 +2,41 @@
 
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.SpriteSheet;
+import org.newdawn.slick.Animation;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
+
 
 public class Human extends Player{
+	int jumpH;
+	int Speed;
 	public Human(){
+		jumpH = 3;
+		Speed = 2;
 		super.setName("Human");
 		super.loc.setX(0);
 		super.loc.setY(0);
-		super.mySprites = new SpriteSheet[3];
-		for(int i=1; i<4; i++){
-			try {
-				super.mySprites[i-1] = new SpriteSheet(name+i + ".png", 34, 34, 0);
-			} 
-			catch(SlickException e){
-				System.out.println("Image failed to load");
-			}
-		}
+		super.mySprites = new Animation[3];
+		makeAnimation();
+	}
+	void makeAnimation(){
+		Image Human1R = new Image("Sprites/Human1.png");
+		Image Human2R = new Image("Sprites/Human2.png");
+		Image Human1L = new Image("Sprites/Human1L.png");
+		Image Human2L = new Image("Sprites/Human2L.png");
+		Image Human3R = new Image("Sprites/Human3.png");
+		Image Human3L = new Image("Sprites/Human3L.png");
+		Image[] HumanMR = {Human1R, Human2R};
+		Image[] HumanML = {Human1L, Human2L};
+		Image[] HumanJR = {Human3R, Human3R};
+		Image[] HumanJL = {Human3L, Human3L};
+		Animation HumanR = new Animation(HumanMR, 300, false);
+		Animation HumanL = new Animation(HumanML, 300, false);
+		Animation HumanJumpR= new Animation(HumanJR, 300, false);
+		Animation HumanJumpL = new Animation(HumanJL, 300, false);
+		mySprites.add(HumanR);
+		mySprites.add(HumanL);
+		mySprites.add(HumanJumpR);
+		mySprites.add(HumanJumpL);
 	}
 }
