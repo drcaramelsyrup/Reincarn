@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="34" tileheight="34">
+ <tileset firstgid="1" source="../../../../../../Volumes/Tiled 0.9.1/examples/desert.tsx"/>
+ <tileset firstgid="49" name="generic_platformer_tiles" tilewidth="34" tileheight="34">
+  <image source="../../../../Downloads/generic_platformer_tiles.png" trans="2991b4" width="1088" height="816"/>
+  <terraintypes>
+   <terrain name="New Terrain" tile="-1"/>
+  </terraintypes>
+  <tile id="69">
+   <properties>
+    <property name="ground" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="70">
+   <properties>
+    <property name="ground" value=""/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="ground" value=""/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="ground" value=""/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="ground" value=""/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="ground" value=""/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="ground" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="ground" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="ground" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="ground" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="ground" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1zFOFGEAhuF/jiBwESosPAWilSKIR0CIHahHQBoIiYeATntDZTRY6AWsScCEhm+ya4CBYWeTcQPxeZI3y84sBf/HQna2lDI7oRhtUls8nNQPdM+1nd/PNJ8ep+NbXmePftVndZR+lKvnd5YeVKVMpek0Uw2uL+TxSXo6fD5X2aNP9VmdpNPS7VxXc/6v09qIHZo72aObnZzbm3LRXp5/L+3nvJX7H9J2epHnS2k5vUwr6VXL99mjm18510+X+tzye/81Pcq9L2XQYfqWNtJmepvepfdpv7rawXBjRuu6R92z3PtdBj3P10tpfdifcr36b9bc8L73Rzf2uFv62mO/XJx/M3t019ce6y1b2GM8fe3RtoU9xtO2x8c8Llbd9rhtC3uM56Y96s8ku43qzyXeH//eTXs0r/29Pur/R3OXy9ftAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/G/OAfj0ogo=
+  </data>
+ </layer>
+</map>

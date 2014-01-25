@@ -30,7 +30,7 @@ public class levelOne extends Level{
 	public Fish fish;
 	public Fly fly;
 	public Human human;
-	String mapName = "maps/testmap.tmx";
+	String mapName = "maps/level1.tmx";
 	
 	
 	

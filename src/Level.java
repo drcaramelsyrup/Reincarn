@@ -38,8 +38,43 @@ public class Level extends BasicGameState{
     	this.input = container.getInput();
     	levelMap = new TiledMap(mapName);
     	
-    	for (objectid = 0; objectid < getLayerIndex("Blocked");
-    	blocked.add()
+    	blocked = new boolean[levelMap.getWidth()][levelMap.getHeight()];
+        water = new boolean[levelMap.getWidth()][levelMap.getHeight()];
+        suicide = new boolean[levelMap.getWidth()][levelMap.getHeight()];
+        
+        for (int xax = 0; xax < levelMap.getWidth(); xax++)
+        {
+            for (int yax = 0; yax < levelMap.getHeight(); yax++)
+            {
+                int ID = levelMap.getTileId(xax, yax, 0);
+                String value = levelMap.getTileProperty(ID, "block" , "false");
+                if ("true".equals(value))
+                {
+                    blocked[xax][yax] = true;
+                }
+            }
+        }
+        for (int xax = 0; xax < levelMap.getWidth(); xax++)
+        {
+            for (int yax = 0; yax < levelMap.getHeight(); yax++)
+            {
+                int ID = levelMap.getTileId(xax, yax, 0);
+                String value = levelMap.getTileProperty(ID, "water" , "false");
+                if ("true".equals(value))
+                {
+                    water[xax][yax] = true;
+                }
+                
+            }
+        }
+        for (int i = 0; i < levelMap.getWidth(); i++)
+        {
+            for (int j = 5; j < levelMap.getHeight(); j++)
+            {
+                if (!blocked[i][j-4] && !blocked[i][j-3] && !blocked[i][j-2] && !blocked[i][j-1] && !blocked[i][j])
+                    suicide[i][j-5] = true;
+            }
+        }
     	//this.input = container.getInput();
         // TODO Auto-generated method stub
  
