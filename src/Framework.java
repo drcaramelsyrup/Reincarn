@@ -35,13 +35,10 @@ public class Framework extends StateBasedGame{
  
     public Framework(String name) {
         super(name);
+        // TODO Auto-generated constructor stub
     }
     
-    public void keyPressed(int key, char c) {
-		if (key == Input.KEY_ESCAPE) {
-			System.exit(0);
-		}
-    }
+    
  
     @Override
     public void initStatesList(GameContainer container) throws SlickException {
