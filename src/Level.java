@@ -13,27 +13,33 @@ import org.newdawn.slick.state.StateBasedGame;
 import org.newdawn.slick.state.transition.FadeInTransition;
 import org.newdawn.slick.state.transition.FadeOutTransition;
 import org.newdawn.slick.tiled.TiledMap;
-
+import java.util.ArrayList;
  
 public class Level extends BasicGameState{
     
 	private int ID;
 	private StateBasedGame game; // stored for later use
 	private Circle jingles = new Circle(100, 100, 100);
+	private TiledMap levelMap;
 	//private Graphics gr;
 	//private int hm = 10;
 	private Input input;
 	public float x = 34f, y = 34f;
+	ArrayList<Integer> blocked;
 	
 	
 	//private Input input;
 	
     @Override
-    public void init(GameContainer container, StateBasedGame game)
+    public void init(GameContainer container, StateBasedGame game, 
+    		String mapName)
             throws SlickException {
     	//this.game = game;
     	this.input = container.getInput();
+    	levelMap = new TiledMap(mapName);
     	
+    	for (objectid = 0; objectid < getLayerIndex("Blocked");
+    	blocked.add()
     	//this.input = container.getInput();
         // TODO Auto-generated method stub
  
@@ -46,7 +52,7 @@ public class Level extends BasicGameState{
     	
     	g.drawRect(100, 100, 100, 100);
     	g.draw(jingles);
-    	
+    	levelMap.render((int)x, (int)y);
     	
  
     }

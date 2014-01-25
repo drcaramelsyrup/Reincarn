@@ -21,7 +21,6 @@ public class levelOne extends Level{
 	private StateBasedGame game; // stored for later use
 	//private Graphics gr;
 	private Input input;
-	private TiledMap grassMap;
 	private Image bear1;
 	private Image bear2;
 	public Animation bear;
@@ -31,15 +30,16 @@ public class levelOne extends Level{
 	public Fish fish;
 	public Fly fly;
 	public Human human;
+	String mapName = "maps/testmap.tmx";
 	
 	
 	
     @Override
-    public void init(GameContainer container, StateBasedGame game)
+    public void init(GameContainer container, StateBasedGame game
+    		String mapName)
             throws SlickException {
-    	super.init(container, game);
+    	super.init(container, game, mapName);
     	this.game = game;
-    	grassMap = new TiledMap("maps/testmap.tmx");
     	bear1= new Image("Sprites/Bear1.png");
     	bear2= new Image("Sprites/Bear2.png");
     	Image[] bearMvmt = {bear1, bear2};
@@ -60,7 +60,7 @@ public class levelOne extends Level{
             throws SlickException {
         // TODO Auto-generated method stub
     	super.render(container, game, g);
-    	grassMap.render((int)x, (int)y);
+    	//super.getLevelMap().render((int)x, (int)y);
     	g.drawString("HELLO", 40, 100);
     	sprite.draw(640, 360);
     	plant.mySprites[0].draw(100, 200);
