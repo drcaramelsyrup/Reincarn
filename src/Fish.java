@@ -12,6 +12,7 @@ public class Fish extends Player{
 	int jumpH;
 	int Speed;
 	public Fish(){
+		super();
 		super.setName("Fish");
 		super.loc = new Location(0, 0);
 		super.mySprites = new Animation[2];

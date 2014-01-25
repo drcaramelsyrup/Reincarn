@@ -12,6 +12,7 @@ public class Human extends Player{
 	int jumpH;
 	int Speed;
 	public Human(){
+		super();
 		jumpH = 3;
 		Speed = 2;
 		super.setName("Human");

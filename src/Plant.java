@@ -11,6 +11,7 @@ public class Plant extends Player{
 	int jumpH;
 	int Speed;
 	public Plant(){
+		super();
 		//jumpH = null;
 		//Speed = null;
 		super.setName("Plant");

@@ -9,6 +9,7 @@ public class Fly extends Player{
 	int jumpH;
 	int Speed;
 	public Fly(){
+		super();
 		super.setName("Fly");
 		super.loc = new Location(0, 0);
 		super.mySprites = new Animation[2];
