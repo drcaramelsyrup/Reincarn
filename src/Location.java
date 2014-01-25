@@ -2,6 +2,8 @@
 public class Location{
 	int xCoord;
 	int yCoord;
+	final int RIGHT = 0;
+	final int LEFT = 180;
 	public Location(int X, int Y){
 		xCoord = X;
 		yCoord = Y;
