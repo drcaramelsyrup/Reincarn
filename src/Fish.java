@@ -10,6 +10,7 @@ public class Fish extends Player{
 	int jumpH;
 	int Speed;
 	public Fish(){
+		super();
 		super.setName("Fish");
 		super.loc.setX(0);
 		super.loc.setY(0);

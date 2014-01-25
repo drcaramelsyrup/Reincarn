@@ -7,6 +7,7 @@ public class Fly extends Player{
 	int jumpH;
 	int Speed;
 	public Fly(){
+		super();
 		super.setName("Fly");
 		super.loc.setX(0);
 		super.loc.setY(0);

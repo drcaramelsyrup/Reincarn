@@ -9,6 +9,7 @@ public class Bear extends Player{
 	int jumpH;
 	int Speed;
 	public Bear(){
+		super();
 		jumpH = 1;
 		Speed = 1;
 		super.setName("Bear");
