@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="34" tileheight="34">
+ <tileset firstgid="1" name="generic_platformer_tiles" tilewidth="34" tileheight="34">
+  <image source="generic_platformer_tiles.png" trans="2991b4" width="1088" height="816"/>
+  <tile id="69">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="384">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="451">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3Y0QmDQBBF0d3m0ld6s7AQJAiSSNydYefjHHgVXEbF3lrrgyPeaAs9cuhRix616FHL6h7Pvo/dyh6fFnocKvTgoEctetTyuFg2Pf6nRy161JLZw3fufVk9dBiT2YP7Mnq4jXGRPbwv5kX3YE5ED3cRJ6oHMWZ7uItYV/+13tv693lGrfGrB2voUYseAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDZC4RejFhAnAAA
+  </data>
+ </layer>
+</map>

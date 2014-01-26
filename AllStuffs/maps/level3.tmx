@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="34" tileheight="34">
+ <tileset firstgid="1" source="generic_platformer_tiles.tsx"/>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WPXLTQBgG4JVnchNgYg7ATw806SGhBhrAMxwiXUjFCRLcgCngCHFcMFCEKwAVTa7A58gardZSElxRPM/MO/ZKtorv1Vq+UaV0M3Ircp5Selfkziilu5F7kfuj7rnt+M6H1J9pkXHVZrsn1B7ELB5GHg308Tg6eBLZjexFno7aLo7i9Tiyv8rt1O2jOV/28SPWr6tuqD2LWTyPvKjW98I41TlP61019/WfVKeZfd/+yLu46CPyqQi18j6dVO1eWN7Hk6rtYyfev6nqPj5GZpGTyDzVnexn0cdmvlTdHGbznxXrpp9lH98i3yM/I78iv9P1nx/6GDbUx3Jus4F183t1Md+Uper2sVXZH/+qr49mbrOBdd5H82yeZJ/bylJ28Uofl9qkj3Fx7G3P8a+pzctq/Tnl/1W/vj6mq8yuWE+LPqYD+by69lHkuMiBLjrKGb2PnEXm2fznA+tFZDeusZe6x8s0fZxETrMsVudoHWbzL5PP/6ynj3zem/Rxqo81l83xqv2xSR8LfQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8V/4Cli+I5UCcAAA=
+  </data>
+ </layer>
+</map>

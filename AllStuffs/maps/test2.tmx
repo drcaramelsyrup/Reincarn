@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="70" height="21" tilewidth="34" tileheight="34">
+ <tileset firstgid="1" name="download" tilewidth="34" tileheight="34">
+  <image source="maps/download.jpg" width="224" height="225"/>
+  <tile id="0">
+   <properties>
+    <property name="water" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="dungeontiles" tilewidth="34" tileheight="34">
+  <image source="maps/dungeontiles.gif" width="288" height="320"/>
+  <tile id="0">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="70" height="21">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QQQoAIAgEwHqM//9i14jqEpTQDCx4EBVLAQAAAID74vUBScWi/t3uLxn+FF1e7d2lTjL2nMzPlgaFIRgs+BYAAA==
+  </data>
+ </layer>
+</map>

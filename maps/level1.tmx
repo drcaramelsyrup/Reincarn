@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="34" tileheight="34">
- <tileset firstgid="1" source="../../../../../../Volumes/Tiled 0.9.1/examples/desert.tsx"/>
- <tileset firstgid="49" name="generic_platformer_tiles" tilewidth="34" tileheight="34">
+ <tileset firstgid="1" name="generic_platformer_tiles" tilewidth="34" tileheight="34">
   <image source="../../../../Downloads/generic_platformer_tiles.png" trans="2991b4" width="1088" height="816"/>
   <terraintypes>
    <terrain name="New Terrain" tile="-1"/>
